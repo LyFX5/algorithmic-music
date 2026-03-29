@@ -1,0 +1,8 @@
+
+
+d1 $ note "c'maj e'min" # s "gtr"
+
+
+d1 $ sound "bd [sd hc]*1.5"
+
+hush

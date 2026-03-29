@@ -1,0 +1,3 @@
+
+
+run SuperColider via pw-jack scide

@@ -1,0 +1,68 @@
+–- I'm a comment
+
+-- this pattern will not play
+-- d1 $ s "bd hh sn hh"
+
+-- "fast 2" will be ignored
+d1
+--  $ fast 2
+  $ s "hh*8"
+
+
+d1 $ sound "drum"
+
+d1 $ sound "bd hh sn hh"
+
+setcps (135/60/4)
+
+d1 $ sound "bd bd hh bd sn bd hh bd"
+
+d1 $ sound "hh * 8"
+
+d1 $ s "bd hh bd hh"
+
+d1 $ s "bd hh hh"
+
+d1 $ s "bd hh hh"
+
+d2 $ s "hh:2 ~ hh:3 cp"
+
+d2 $ sound "sn sn:6 sn bd sn"
+
+"bd hh hh"
+
+"1 2 3"
+
+drawLine "a b*2 d"
+
+d1 $ s "a b*2 d"
+
+p "tick" $ "0*4" # s "tick"
+
+d1 $ silence
+
+d2 $ silence
+
+
+-------------------------------------------
+
+
+d1 $ sound "arpy cp arpy:2"
+
+d2 $ sound "sn sn:2 bd sn"
+
+solo 2
+
+-- now only the second pattern will be playing
+
+unsolo 2
+
+-- now both will be playing, again
+
+mute 2
+
+-- now only the first pattern will be playing
+
+unmute 2 -- (or unmuteAll)
+
+-- now both will be playing
